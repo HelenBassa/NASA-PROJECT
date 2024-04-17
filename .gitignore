@@ -2,6 +2,7 @@
 
 # compiled output
 build/
+public/
 /tmp
 /out-tsc
 

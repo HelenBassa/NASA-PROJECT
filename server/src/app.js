@@ -20,9 +20,8 @@ app.use(express.static(path.join(__dirname, "..", "public")));
 app.use("/planets", planetsRouter);
 app.use("/launches", launchesRouter);
 
-// ! NO NEED THIS CODE
-// app.get("/*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "..", "public/index.html"));
-// });
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "public/index.html"));
+});
 
 module.exports = app;
